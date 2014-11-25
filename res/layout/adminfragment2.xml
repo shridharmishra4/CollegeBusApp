@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/af2_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:text="Update The Database"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/af2_header"
+        android:onClick="radioFunc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" >
+
+        <RadioButton
+            android:id="@+id/af2_addbus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Add New Bus" />
+
+        <RadioButton
+            android:id="@+id/af2_adddest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Destination" />
+
+        
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/update"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="Click" />
+
+</RelativeLayout>

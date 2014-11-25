@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/BusNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:paddingLeft="10dp"
+        android:text="Bus-No"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/InputType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BusNo"
+        android:layout_below="@+id/BusNo"
+        android:paddingLeft="10dp"
+        android:text="InputType" />
+
+    <TextView
+        android:id="@+id/BusDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InputType"
+        android:layout_below="@+id/InputType"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="Crew-Details"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/Output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BusDetails"
+        android:layout_below="@+id/BusDetails"
+        android:paddingLeft="10dp"
+        android:text="OutputType" />
+
+    <Spinner
+        android:id="@+id/f3_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Output"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/btn4" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/f3_spinner"
+        android:layout_alignParentRight="true"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/f3_drivername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/f3_spinner"
+        android:layout_below="@+id/f3_spinner"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/f3_drivername_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/f3_drivername"
+        android:layout_below="@+id/f3_drivername"
+        android:paddingLeft="10dp" />
+
+    <TextView
+        android:id="@+id/f3_driverno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/f3_drivername_tag"
+        android:layout_below="@+id/f3_drivername_tag"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/f3_driverno_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/f3_driverno"
+        android:layout_below="@+id/f3_driverno"
+        android:paddingLeft="10dp" />
+
+</RelativeLayout>

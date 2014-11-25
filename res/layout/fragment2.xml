@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/f2_spinner"
+        android:layout_alignParentRight="true"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/BusNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:paddingLeft="10dp"
+        android:text="Bus-No"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/InputType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BusNo"
+        android:layout_below="@+id/BusNo"
+        android:paddingLeft="10dp"
+        android:text="InputType" />
+
+    <TextView
+        android:id="@+id/BusDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InputType"
+        android:layout_below="@+id/InputType"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:text="Bus-Details"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/Output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/BusDetails"
+        android:layout_below="@+id/BusDetails"
+        android:paddingLeft="10dp"
+        android:text="OutputType" />
+
+    <Spinner
+        android:id="@+id/f2_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Output"
+        android:layout_marginTop="25dp"
+        android:layout_toLeftOf="@+id/btn3" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/f2_spinner" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/f2_busno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/f2_vechileno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/f2_busno"
+                android:layout_below="@+id/f2_busno"
+                android:layout_marginTop="24dp"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/f2_routename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/f2_vechileno"
+                android:layout_below="@+id/f2_vechileno"
+                android:layout_marginTop="22dp"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/f2_noofstops_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/f2_noofStops"
+                android:layout_below="@+id/f2_noofStops"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/f2_vechileno_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/f2_vechileno"
+                android:layout_below="@+id/f2_vechileno"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/f2_routename_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/f2_routename"
+                android:layout_below="@+id/f2_routename"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/f2_busno_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/f2_vechileno"
+                android:layout_below="@+id/f2_busno"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/f2_noofStops"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/f2_routename_tag"
+                android:paddingLeft="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/f2_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/f2_noofStops"
+                android:text="Stops" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
